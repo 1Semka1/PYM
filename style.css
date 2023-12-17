@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,
+body {
+  margin: 0;
+  color: #dddddd;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  background: #111;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: #111;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header_logo {
+  padding-left: 50px;
+}
+.header_logo a {
+  transition: 1s;
+}
+.header_logo a:hover {
+  color: #16d9e3;
+}
+.logo_name {
+  display: inline;
+  padding-left: 5px;
+}
+.header_auth {
+  padding-right: 50px;
+  color: #4d4d4d;
+}
+
+.title {
+  background: #1d1d1d;
+  padding-top: 70px;
+  min-height: 200px;
+  height: 55vh;
+  /* height: 600px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name_school {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.name_school i {
+  display: block;
+  font-size: 50px;
+  padding-right: 20px;
+}
+.name_school h1 {
+  margin: 0;
+}
+.title p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.applications_scene {
+  background: #111;
+}
+.aplications {
+  padding-top: 50px;
+  width: 90%;
+  margin: auto;
+}
+
+.line_1 {
+  display: flex;
+  justify-content: center;
+}
+.line_2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.application_card {
+  width: 200px;
+  min-height: 280px;
+  text-align: center;
+  border: 2px solid #1d1d1d;
+  border-radius: 10px;
+  margin: 15px;
+}
+.card_content {
+  padding: 20px;
+}
+.application_card i {
+  font-size: 70px;
+  transition: 1s;
+}
+
+.application_card:hover i {
+  transform: scale(1.2);
+  color: #16d9e3;
+}
+
+.application_card h3 {
+  height: 50px;
+  font-weight: bold;
+}
+
+.application_card p {
+  height: 50px;
+  font-size: 18px;
+}
+a {
+  display: block;
+  height: 100%;
+  color: #dddddd;
+  text-decoration: none;
+}
+a:hover {
+  color: #dddddd;
+}

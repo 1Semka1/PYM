@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #dddddd;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: #111;
+  font-size: 30px;
+  font-weight: 700;
+  transition: margin 0.5s ease-out;
+}
+
+.header_logo {
+  padding-left: 50px;
+}
+.logo_name {
+  display: inline;
+  padding-left: 5px;
+}
+.header_auth {
+  padding-right: 50px;
+  color: #4d4d4d;
+}
+
+a {
+  color: #dddddd;
+  text-decoration: none;
+  transition: 1s;
+}
+
+a:hover {
+  color: #16d9e3;
+  transform: scale(1.1);
+}
+
+.start {
+  font-size: 2rem;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, #111 0%, #1d1d1d 100%);
+}
+
+.header.up {
+  margin-top: 100vh;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  color: #dddddd;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  transition: 1s;
+}
+
+.time-btn:hover {
+  border: 2px solid #16d9e3;
+  color: #16d9e3;
+  transform: scale(1.1);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #16d9e3;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(118.38deg, #111 -4.6%, #1d1d1d 200.44%);
+  box-shadow: -8px -8px 20px #1d1d1d, 10px 7px 20px #1d1d1d;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.circle {
+  background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}

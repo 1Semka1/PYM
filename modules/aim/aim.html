@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="aim.css" />
+        <title>Aim Training</title>
+        <script src="aim.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/7665becfe0.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header_logo">
+                <a href="../../index.html"
+                    ><i class="fa-solid fa-book-bookmark"></i>
+                    <p class="logo_name">PYM</p></a
+                >
+            </div>
+            <div class="header_auth">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </div>
+        </div>
+
+        <div class="screen">
+            <h1>Тренировка точности</h1>
+            <a href="#" class="start" id="start">Начать игру</a>
+        </div>
+
+        <div class="screen">
+            <h1>Выберите время</h1>
+            <ul class="time-list" id="time-list">
+                <li>
+                    <button class="time-btn" data-time="10">10 сек</button>
+                </li>
+                <li>
+                    <button class="time-btn" data-time="20">20 сек</button>
+                </li>
+                <li>
+                    <button class="time-btn" data-time="30">30 сек</button>
+                </li>
+                <li>
+                    <button class="time-btn" data-time="40">40 сек</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="screen">
+            <h3>Осталось <span id="time">00:00</span></h3>
+            <div class="board" id="board"></div>
+        </div>
+    </body>
+</html>

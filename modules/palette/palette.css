@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: #111;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header_logo {
+  padding-left: 50px;
+}
+.header_logo a {
+  transition: 1s;
+}
+.header_logo a:hover {
+  color: #16d9e3;
+}
+.logo_name {
+  display: inline;
+  padding-left: 5px;
+}
+.header_auth {
+  padding-right: 50px;
+  color: #4d4d4d;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col h2 {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.col button {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+/* font: 15px "Roboto", sans-serif; */
+
+a {
+  display: block;
+  height: 100%;
+  color: #dddddd;
+  text-decoration: none;
+}
+a:visited,
+a:focus,
+a:hover {
+  color: #dddddd;
+}

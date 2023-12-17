@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #1d1d1d;
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: #111;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header_logo {
+  padding-left: 50px;
+}
+.header_logo a {
+  transition: 1s;
+}
+.logo_name {
+  display: inline;
+  padding-left: 5px;
+}
+.header_auth {
+  padding-right: 50px;
+  color: #4d4d4d;
+}
+
+.container {
+  max-width: 800px;
+  padding-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  color: #c7d0d4;
+}
+.logo p {
+  font-size: 45px;
+  font-weight: 500;
+  display: inline;
+}
+.devider {
+  border-top: 2px solid #c7d0d4;
+  padding-bottom: 30px;
+}
+.hidden {
+  display: none;
+}
+.results-title {
+  display: -webkit-box;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #16d9e3;
+}
+.logo {
+  display: inline-block;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 38px;
+  padding: 50px 0;
+}
+.indicators {
+  display: -webkit-box;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #c7d0d4;
+  margin-bottom: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-box-pack: justify;
+  justify-content: start;
+  width: 560px;
+}
+.indicator {
+  display: -webkit-box;
+  display: flex;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  border-right: 1px solid #c7d0d4;
+  padding: 10px;
+}
+.indicator:last-child {
+  border-right: none;
+}
+.indicator__icon {
+  margin-right: 20px;
+  font-size: 15px;
+}
+.indicator__icon {
+  color: #0070ff;
+}
+.indicator__icon--errors {
+  color: #e50909;
+}
+.indicator__name {
+  color: #c7d0d4;
+  font-size: 15px;
+}
+.indicator__value {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #c7d0d4;
+}
+.input {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border: 3px solid transparent;
+  border: 2px solid #111;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  transition: all 0.1s ease-in;
+  background: #fff;
+}
+.input.blur {
+  border: 3px solid black;
+}
+.input.error {
+  background-color: #fff000;
+}
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+.text .line {
+  height: 1.5em;
+  margin-bottom: 1px;
+}
+.text .done {
+  color: #9d9d9d;
+}
+.text .hint {
+  background-color: #ff0000ad;
+}
+.text.error {
+  color: #ff0000;
+}
+.keyboard {
+  padding: 30px 70px 30px 70px;
+  border: 2px solid #9d9d9d;
+  border-radius: 20px;
+}
+.keyboard .line {
+  display: -webkit-box;
+  display: flex;
+}
+.keyboard .line div {
+  width: 49px;
+  height: 49px;
+  line-height: 42px;
+  font-size: 15px;
+  border: 1px solid #c7d0d4;
+  background: #fff;
+  margin: 1px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.keyboard .line div.hint {
+  background: #c7d0d4;
+}
+.keyboard .line .backspace {
+  width: 75px;
+  text-align: right;
+  color: #95a0a4;
+  font-size: 10px;
+}
+.keyboard .line .tab {
+  width: 75px;
+  text-align: left;
+  color: #95a0a4;
+  font-size: 10px;
+}
+.keyboard .line .caps {
+  width: 87px;
+  text-align: left;
+  color: #95a0a4;
+  font-size: 10px;
+}
+.keyboard .line .enter {
+  width: 88px;
+  text-align: right;
+  color: #95a0a4;
+  font-size: 10px;
+}
+.keyboard .line .shift {
+  width: 113px;
+  text-align: left;
+  color: #95a0a4;
+  font-size: 10px;
+}
+.keyboard .line .shift:last-child {
+  text-align: right;
+}
+.keyboard .line .space {
+  margin-left: auto;
+  width: 312px;
+  text-align: right;
+  color: #95a0a4;
+  font-size: 10px;
+}
+.keyboard .line .alt {
+  width: 88px;
+  text-align: right;
+  color: #95a0a4;
+  font-size: 10px;
+  margin-right: auto;
+}
+
+.pressed {
+  background-color: #16d9e3 !important;
+}
+
+a {
+  display: block;
+  height: 100%;
+  color: #dddddd;
+  text-decoration: none;
+}
+a:hover {
+  color: #16d9e3;
+}
